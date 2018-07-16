@@ -5,10 +5,13 @@ const MODIFICATORS = [
     'none',
     '+VAR',
     '-VAR',
+    'none',
     '!VAR',
     '+!VAR',
+    'none',
     '-!!VAR',
-    '+!!VAR'
+    '+!!VAR',
+    'none'
 ];
 
 const VALUE_TYPES = [

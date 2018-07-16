@@ -1,3 +1,6 @@
+const argv = require('optimist').argv;
+const trainingCount = argv.count || 1;
+
 const MODIFICATORS = [
     'none',
     '+VAR',
@@ -191,5 +194,7 @@ function getRandomNumber(from, to) {
     return Math.floor(Math.random() * (to - from)) + from;
 }
 
-const result = getTraining();
-console.log(result);
+for (let i = 0; i < trainingCount; i++) {
+    const result = getTraining();
+    console.log(result);
+}
